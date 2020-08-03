@@ -37,6 +37,7 @@
     <div class="ui container">
         <div class="ui stackable grid">
             <div class="eleven wide column">
+
                 <img src="./static/images/test.jpg" alt="" class="ui rounded image">
             </div>
             <div class="five wide column">
@@ -69,8 +70,14 @@
                 </div>
                 <div class="ui bottom attached segment">
                     <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
-                    <a href="#" class="ui circular icon button"><i class="wechat icon"></i></a>
-                    <a href="#" class="ui qq circular icon button" data-content="373606970" data-position="center"><i class="qq icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                    <div class="ui wechatQRcode flowing popup transition hidden">
+                        <img src="./static/images/wechat.PNG" alt="" class="ui rounded image" style="width: 120px">
+                    </div>
+                    <a href="#" class="ui qq circular icon button"><i class="qq icon"></i></a>
+                    <div class="ui qqQRcode flowing popup transition hidden">
+                        <img src="./static/images/qq.jpg" alt="" class="ui rounded image" style="width: 120px">
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,7 +134,17 @@
         $('.m-item').toggleClass('m-mobile-hide');
     })
 
-    $('.qq').popup();
+    $('.wechat').popup({
+        popup: $('.wechatQRcode.popup'),
+        on: 'hover',
+        position: 'bottom center'
+    })
+
+    $('.qq').popup({
+        popup: $('.qqQRcode.popup'),
+        on: 'hover',
+        position: 'bottom center'
+    })
 </script>
 </body>
 </html>
