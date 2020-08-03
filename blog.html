@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薛定谔的麻辣锅-文章详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui white header item">薛定谔的麻辣锅</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="搜索...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <!--文章头部-->
+        <div class="ui top attached segment">
+            <div class="ui  horizontal link list">
+                <div class="item">
+                    <img src="./static/images/portrait.JPG" alt="" class="ui avatar image">
+                    <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
+                </div>
+                <div class="item">
+                    <i class="calendar icon"></i> 2020/8/2
+                </div>
+                <div class="item">
+                    <i class="eye icon"></i> 100
+                </div>
+            </div>
+        </div>
+        <!--图片区域-->
+        <div class="ui attached segment">
+            <img src="./static/images/test.jpg" alt="" class="ui fluid rounded image">
+        </div>
+        <!--文章内容-->
+        <div class="ui attached padded segment">
+            <div class="ui right aligned basic segment">
+                <div class="ui blue basic label">原创</div>
+            </div>
+
+            <h2 class="ui centered aligned header">Maven 详解</h2>
+            <br>
+
+            <div id="content" class="m-padded-left-right-responsive m-padded-tb-large">
+                1. Maven
+
+                介绍
+
+                Maven 是 Apache 下的一个纯 Java 开发的开源项目。基于项目对象模型（POM: Project Object Model）概念，Maven
+                利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。
+
+                Maven 是一个项目管理工具，可以对 Java 项目进行构建、依赖管理。
+
+                Maven 详解
+
+                功能
+
+                Maven 统一集中管理好所有的依赖包，不需要程序员再去寻找。
+                对应第三方组件用到的共同 jar，Maven 自动解决重复和冲突问题。
+                Maven 作为一个开放的架构，提供了公共接口，方便同第三方插件集成。程序员可以将自己需要的插件，动态地集成到 Maven，从而扩展新的管理功能。
+                Maven 可以统一每个项目的构建过程，实现不同项目的兼容性管理。
+                Maven 主要功能以及概念介绍
+
+                教程
+
+                Maven 教程
+
+                推荐书籍：《Maven 实战》
+
+                官方文档
+
+                Maven 官方文档
+            </div>
+
+            <!--标签-->
+            <div class="m-padded-left-right-responsive">
+                <div class="ui basic green left pointing label">Maven</div>
+            </div>
+
+            <!--赞赏-->
+            <div class="ui center aligned basic segment">
+                <button ID="payButton" class="ui orange basic circular button">赞赏</button>
+            </div>
+            <div class="ui payQRcode flowing popup transition hidden">
+                <div class="ui orange basic label">
+                    <div class="ui images" style="font-size: inherit !important;">
+                        <div class="image">
+                            <img src="./static/images/alipay.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                            <div>支付宝</div>
+                        </div>
+                        <div class="image">
+                            <img src="./static/images/wechatpay.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                            <div>微信</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--文章信息-->
+        <div class="ui attached positive message">
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <ui class="list">
+                        <li>作者：郭慕尧（联系作者）</li>
+                        <li>发表时间：2020/08/03 15:40</li>
+                        <li>版权声明：自由转载-非商用-非衍生-保持署名</li>
+                        <li>转载：请在文末添加作者微信二维码</li>
+                    </ui>
+                </div>
+                <div class="five wide column">
+                    <img src="./static/images/wechat.PNG" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                </div>
+            </div>
+        </div>
+        <!--留言区域-->
+        <div class="ui bottom attached segment">
+            <div class="ui green segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">留言</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="./static/images/visitor1.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">小王</a>
+                            <div class="metadata">
+                                <span class="date">今天 at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                                来了来了~
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="./static/images/visitor1.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">小王</a>
+                            <div class="metadata">
+                                <span class="date">昨天 at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                                <p>留个脚印</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/images/visitor2.jpg">
+                                </a>
+                                <div class="content">
+                                    <a class="author">刘小萱</a>
+                                    <div class="metadata">
+                                        <span class="date">前天</span>
+                                    </div>
+                                    <div class="text">
+                                        傻子
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="./static/images/visitor1.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">小王</a>
+                            <div class="metadata">
+                                <span class="date">五天前</span>
+                            </div>
+                            <div class="text">
+                                略略略~~
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ui form">
+                <div class="field">
+                    <textarea name="content" placeholder="客官，请留个脚印吧~"></textarea>
+                </div>
+                <div class="fields">
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="nickname" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" name="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <div class="field m-margin-bottom-small m-mobile-wide">
+                        <button class="ui green button m-mobile-wide"><i class="chevron up icon"></i>发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.PNG" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">微信：gmy19980822</a>
+                    <a href="#" class="item">QQ：373606970</a>
+                    <a href="#" class="item">邮箱：kevinguo@163.com</a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">关于我</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    雨露均沾啥都学的小白程序员
+                </p>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider m-text-thin m-text-spaced m-opacity-mini"></div>
+        <p class="m-text-slim m-text-spaced m-opacity-tiny">Copyright©2020 Designed by Kevin Guo</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+
+    $('#payButton').popup({
+        popup: $('.payQRcode.popup'),
+        on: 'click',
+        position: 'bottom center'
+    })
+</script>
+</body>
+</html>

@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bfbdf2-73ac-4d20-a016-6eb87f5c648c" name="Default Changelist" comment="" />
+    <list default="true" id="f8bfbdf2-73ac-4d20-a016-6eb87f5c648c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/archives.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/alipay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bright-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/dark-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/visitor1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/visitor2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/wechatpay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/me.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +51,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\project\html\blog" />
+      <recent name="E:\Java\project\html\blog\static\images" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/image" />
     </key>
@@ -53,14 +79,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="713" y="429" width="254" height="264" key="Github.ShareDialog" timestamp="1596380699222">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="713" y="429" width="254" height="264" key="Github.ShareDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1596380699222" />
-    <state x="283" y="134" key="SettingsEditor" timestamp="1596380048703">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="209" y="190" key="SettingsEditor" timestamp="1596418596506">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="283" y="134" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1596380048703" />
+    <state x="209" y="190" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596418596506" />
   </component>
 </project>
