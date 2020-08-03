@@ -10,20 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bfbdf2-73ac-4d20-a016-6eb87f5c648c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archives.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/alipay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bright-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/dark-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/visitor1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/visitor2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/wechatpay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types.html" afterDir="false" />
+    <list default="true" id="f8bfbdf2-73ac-4d20-a016-6eb87f5c648c" name="Default Changelist" comment="实现文章详情、分类、标签、归档页面">
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/archives.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/types.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +66,34 @@
       <updated>1596289876478</updated>
       <workItem from="1596289877888" duration="15618000" />
     </task>
+    <task id="LOCAL-00001" summary="实现文章详情、分类、标签、归档页面">
+      <created>1596449712296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596449712296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="实现文章详情、分类、标签、归档页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现文章详情、分类、标签、归档页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="713" y="429" width="254" height="264" key="Github.ShareDialog" timestamp="1596380699222">
@@ -92,5 +105,17 @@
     </state>
     <state x="283" y="134" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1596380048703" />
     <state x="209" y="190" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596418596506" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596455130238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596455130238" />
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596455239987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596455239987" />
+    <state x="744" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596455253759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="419" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596455253759" />
   </component>
 </project>
