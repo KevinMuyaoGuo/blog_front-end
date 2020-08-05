@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="./static/css/animate.css">
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>-->
     <link rel="stylesheet" href="./static/lib/prism/prism.css">
+    <link rel="stylesheet" href="./static/lib/tocbot/tocbot.css">
     <link rel="stylesheet" href="./static/css/me.css">
 </head>
 <body>
+
+<a name="top" id="top"></a>
 
 <!--导航-->
 <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
@@ -37,7 +40,7 @@
 </nav>
 
 <!--中间内容-->
-<div class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
+<div id="waypoint" class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <!--文章头部-->
         <div class="ui top attached segment">
@@ -67,7 +70,7 @@
             <h2 class="ui centered aligned header">Maven 详解</h2>
             <br>
 
-            <div id="content" class="typo typo-selection m-padded-left-right-responsive m-padded-tb-large">
+            <div id="content" class="typo typo-selection js-toc-content m-padded-left-right-responsive m-padded-tb-large">
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
                 <pre><code class="language-css">p { color: red }</code></pre>
@@ -572,14 +575,30 @@ h5,h6{font-size:1em;}
     </div>
 </div>
 
-<div class="m-padded m-right-bottom m-fixed">
+<div id="toolbar" class="m-padded m-right-bottom m-fixed" style="display:none;">
     <div class="ui vertical icon buttons">
-        <button type="button" class="ui green button">目录</button>
+        <button type="button" class="ui toc green button">目录</button>
         <a href="#comment-container" class="ui green button">留言</a>
-        <button class="ui icon button"><i class="wechat icon"></i></button>
-        <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
+        <a href="#" onclick="return false;" class="ui wechat icon button"><i class="ui wechat icon"></i></a>
+        <a id="goTop" class="ui icon button" data-tooltip="返回顶部" data-position="left center"><i class="chevron up icon"></i></a>
     </div>
 </div>
+
+<div class="ui toc-container flowing popup transition hidden" style="width: 250px !important;">
+    <ol class="js-toc">
+
+    </ol>
+</div>
+
+<div class="ui wechatQRcode flowing popup transition hidden" style="width: 120px !important;">
+    <div id="qrcode"></div>
+    <br>
+    <div>微信扫码看文章</div>
+</div>
+
+<!--<div id="qrcode" class="ui wechatQRcode flowing popup transition hidden" title="微信扫码看文章" style="width: 130px !important;">-->
+<!--&lt;!&ndash;    <img src="./static/images/wechat.PNG" alt="" class="ui rounded image" style="width: 120px">&ndash;&gt;-->
+<!--</div>-->
 
 
 <br>
@@ -628,6 +647,9 @@ h5,h6{font-size:1em;}
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <script src="./static/lib/prism/prism.js"></script>
+<script src="./static/lib/tocbot/tocbot.min.js"></script>
+<script src="./static/lib/qrcode/qrcode.min.js"></script>
+<script src="./static/lib/waypoints/jquery.waypoints.min.js"></script>
 
 <script>
     $('.menu.toggle').click(function () {
@@ -639,6 +661,85 @@ h5,h6{font-size:1em;}
         on: 'click',
         position: 'bottom center'
     })
+
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
+    });
+
+    $('.toc.button').popup({
+        popup: $('.toc-container.popup'),
+        on: 'click',
+        position: 'left center'
+    })
+
+    $('.wechat').popup({
+        popup: $('.wechatQRcode.popup'),
+        on: 'hover',
+        position: 'left center'
+    })
+
+    var qrcode = new QRCode("qrcode", {
+        text: "http://jindo.dev.naver.com/collie",
+        width: 100,
+        height: 100,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            if (direction == 'down') {
+                $('#toolbar').show(200);
+            }else{
+                $('#toolbar').hide(300);
+            }
+            console.log('Scrolled to waypoint!');
+        }
+    })
+
 </script>
+
+<script>
+    /*平滑滚动回到顶部*/
+
+    // 获取按钮
+    const goTopBtn = document.getElementById('goTop')
+    // 初始时，被浏览器卷进去的上部内容高度为 0
+    let scrollTop = 0
+    // 监听页面滚动事件
+    window.onscroll = () => {
+        // 获取被浏览器卷进去的上部内容高度
+        scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        // 如果被卷进去的内容高度大于 50，显示返回顶部的按钮；
+        // 如果被卷进去的内容高度小于 50，隐藏返回顶部的按钮。
+        scrollTop > 50 ? (goTopBtn.style.display = 'block') : (goTopBtn.style.display = 'none')
+    }
+    goTopBtn.onclick = () => {
+        // 清空上一次的定时器
+        let timer = null;
+        clearInterval(timer);
+        // 创建定时器，每 15ms 执行一次箭头函数
+        timer = setInterval(()=>{
+            // 每次执行函数，scrollTop 减少十分之一
+            scrollTop -= scrollTop / 10;
+            window.scrollTo(0,scrollTop)
+            // 当 scrollTop 小于 2 时，直接使 scrollTop 为 0，并且清空定时器。
+            if(scrollTop<2){
+                window.scrollTo(0,0);
+                clearInterval(timer);
+            }
+        },15)
+    }
+</script>
+
 </body>
 </html>

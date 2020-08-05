@@ -14,11 +14,15 @@ body {
 }
 
 .m-padded {
-    padding: 1em !important;
+    padding: 1.5em !important;
 }
 
 .m-padded-large {
     padding: 1.8em !important;
+}
+
+.m-padded-big {
+    padding: 2em !important;
 }
 
 .m-padded-left-right-responsive {
