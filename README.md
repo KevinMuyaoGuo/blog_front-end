@@ -23,11 +23,14 @@
 - 个人偏好配置 `me.css`
 
 ### 插件集成
-- 页面动画 [animate](https://animate.style/)
-- 文章排版美化 [typo](https://github.com/sofish/typo.css)
-- Markdown 编辑器 [editormd](https://github.com/pandao/editor.md)
+- 页面动画 [animate.css](https://animate.style/)
+- 文章排版美化 [typo.css](https://github.com/sofish/typo.css)
+- Markdown 编辑器 [editor.md](https://github.com/pandao/editor.md)
 - 代码高亮 [prism](https://prismjs.com/)
 - 目录生成 [tocbot](https://github.com/tscanlin/tocbot)
+- 滚动侦测 [waypoints](https://github.com/imakewebthings/waypoints)
+- 平滑滚动 [jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
+- 二维码生成 [qrcode.js](http://davidshimjs.github.io/qrcodejs/)
 
 ### 图片文件
 - 文章配图（测试用） `test.jpg`
